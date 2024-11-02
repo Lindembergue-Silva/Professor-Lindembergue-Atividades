@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindembergue Silva</title>
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .parallax {
+            background-image: url('https://images.unsplash.com/photo-1509170051686-83f8efd35a31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI4fHxtJUMzJUJBc2ljYSUyMGUlMjB0ZW9sb2dpYXxlbnwwfHwwfHx8MA%3D%3D');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        #about, #activities, #contact {
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Estilos de formulário */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <h1>Lindembergue Silva</h1>
+        <p><!--Professor-Músico-Teólogo--> </p>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#activities">Atividades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Parallax -->
+    <section id="home" class="parallax">
+        <h2 style="color: white; font-size: 3em;">Bem-vindo ao site do professor Lindembergue</h2>
+    </section>
+
+  
+
+    <!-- Atividades -->
+    <section id="activities">
+        <h2>Atividades para Alunos</h2>
+        <p>Aqui você encontrará atividades e exercícios interativos.</p>
+        <!-- Incorporando atividades externas -->
+       <iframe style="max-width:100%" src="https://wordwall.net/pt/embed/32f2c89fb76e4bf896cf14a11041c5f1?themeId=21&templateId=69&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+    </section>
+      <!-- Sobre -->
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Eu sou Lindembergue Silva e tenho experiência na área educacional, tenho me dedicado ao desenvolvimento de práticas pedagógicas que promovam a aprendizagem significativa e a inclusão. Minha abordagem é fundamentada em metodologias ativas e na construção de ambientes educacionais que estimulem a participação e o engajamento dos alunos.
+
+
+
+<br><b>Graduações:</b>
+<br>*Música
+<br>*Teologia
+<br>*Pedagogia
+<br> <b>Especializações:</b>
+<br>*Coordenação e Gestão Escolar
+<br>*Currículo e Prática Docente para os Anos Iniciais do Ensino Fundamental
+<br>*Educação Profissional e Tecnológica
+<br>*Mestrado em Teologia</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact">
+
+        <h2>Contato</h2>
+
+        <p>Entre em contato para mais informações.</p>
+        <form id="contactForm">
+            <a href="https://wa.me/5585991941046?text=Ol%C3%A1,%20Professor%20Lindembergue!" target="_blank" class="botao-link">Clique</a>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Lindembergue Silva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Efeito suave para rolar até as seções ao clicar nos links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
